@@ -1,0 +1,91 @@
+/* App styles - Minimal CSS needed, mostly using Tailwind */
+
+#root {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* Smooth transitions */
+* {
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+/* Print styles for elegant PDF output */
+@page {
+  size: A4;
+  margin: 1cm;
+  margin-top: 1cm;
+  margin-bottom: 1cm;
+  /* Suppress browser headers and footers */
+  @bottom-center {
+    content: "";
+  }
+  @top-center {
+    content: "";
+  }
+  @bottom-left {
+    content: "";
+  }
+  @bottom-right {
+    content: "";
+  }
+  @top-left {
+    content: "";
+  }
+  @top-right {
+    content: "";
+  }
+}
+
+@media print {
+  @page {
+    margin: 1cm;
+    /* Suppress browser headers and footers */
+    @bottom-center {
+      content: "";
+    }
+    @top-center {
+      content: "";
+    }
+    @bottom-left {
+      content: "";
+    }
+    @bottom-right {
+      content: "";
+    }
+    @top-left {
+      content: "";
+    }
+    @top-right {
+      content: "";
+    }
+  }
+
+  html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0 !important;
+    padding: 0 !important;
+    background: white !important;
+  }
+
+  #root {
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  .no-print {
+    display: none !important;
+  }
+
+  .a4-paper {
+    width: 100% !important;
+    height: auto !important;
+    box-shadow: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    page-break-after: avoid;
+  }
+}
+
