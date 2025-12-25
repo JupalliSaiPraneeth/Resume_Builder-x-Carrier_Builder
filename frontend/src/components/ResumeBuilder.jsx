@@ -57,7 +57,7 @@ const ResumeBuilder = () => {
     setIsSaving(false);
 
     if (savedId) {
-      alert('✅ Resume saved successfully to database');
+      alert(' Resume saved successfully to database');
     }
   };
 
@@ -166,7 +166,7 @@ const ResumeBuilder = () => {
               disabled={isSaving}
               className="w-full mb-3 bg-blue-600 text-white font-bold py-3 rounded-lg hover:bg-blue-700"
             >
-              {isSaving ? 'Saving...' : '💾 Save Resume'}
+              {isSaving ? 'Saving...' : ' Save Resume'}
             </button>
 
             {/* PDF BUTTON */}
