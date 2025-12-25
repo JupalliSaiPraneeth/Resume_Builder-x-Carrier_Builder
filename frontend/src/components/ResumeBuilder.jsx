@@ -160,14 +160,7 @@ const ResumeBuilder = () => {
         {/* Preview Section */}
         <div className="lg:col-span-1">
           <div className="sticky top-6">
-            {/* SAVE BUTTON */}
-            <button
-              onClick={handleSaveResume}
-              disabled={isSaving}
-              className="w-full mb-3 bg-blue-600 text-white font-bold py-3 rounded-lg hover:bg-blue-700"
-            >
-              {isSaving ? 'Saving...' : ' Save Resume'}
-            </button>
+           
 
             {/* PDF BUTTON */}
             <button
